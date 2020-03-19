@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_chat"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ChatActivity">
+
+    <Switch
+        android:checked="true"
+        android:id="@+id/connexion"
+        android:text="@string/connexion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Switch>
+    <EditText
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/connexion"
+        android:layout_toLeftOf="@+id/envoyer"
+        android:id="@+id/message"
+        android:hint="@string/filltext"
+        android:maxLines="1"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </EditText>
+    <Button
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/connexion"
+        android:id="@+id/envoyer"
+        android:text="@string/envoyer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Button>
+    <ScrollView
+        android:layout_below="@+id/message"
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/chat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        </TextView>
+    </ScrollView>
+
+</RelativeLayout>

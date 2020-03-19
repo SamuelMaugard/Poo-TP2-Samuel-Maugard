@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">ANDROID-TP01</string>
+    <string name="filltext">Tapez votre message</string>
+    <string name="connexion">Connexion</string>
+    <string name="envoyer">Envoyer</string>
+    <string name="listes">Liste participant</string>
+
+</resources>
